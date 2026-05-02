@@ -8,7 +8,7 @@ const { Pool } = require('pg');
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:3000']  // we'll add the Vercel URL later
+    origin: ['http://localhost:3000', 'https://lab1-app-dev.vercel.app']
 }));
 
 const db = new Pool({
